@@ -25,7 +25,7 @@ function App() {
   const [entered, setEntered] = useState(false); // State for animation
 
   // Typewriter effect
-  const [bioText, setBioText] = useState("Owner of shdw.site");
+  const [bioText, setBioText] = useState("Owner of wishful.site");
   const [index, setIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
 
@@ -98,7 +98,7 @@ function App() {
         setCssLabel('Copied');
         setTimeout(() => {
           setCopyStatus('');
-          setCssLabel('Copy BTC Address');
+          setCssLabel('Copy discord link');
         }, 2000);
       })
       .catch(error => console.error('Error copying address to clipboard:', error));
@@ -111,7 +111,7 @@ function App() {
         setCssLabel1('Copied');
         setTimeout(() => {
           setCopyStatus('');
-          setCssLabel1('Copy LTC Address');
+          setCssLabel1('Copy cashapp');
         }, 2000);
       })
       .catch(error => console.error('Error copying address to clipboard:', error));
@@ -156,23 +156,23 @@ function App() {
         <p1 className='num'>{viewCount}</p1>
         <img src={pfp} className='pfp' alt="Profile Picture" />
         <div className='info' >
-          <h1 className='name'>shadow</h1>
-          <h1 className='bio'>{bio}</h1> {/* Bio with typewriter effect */}
+          <h1 className='name'>wishful</h1>
+          <h1 className='bio'>{bio}</https://discord.gg/7apV9Tpkw3> {/* Bio with typewriter effect */}
         </div>
         <div className='links'>
-          <a href="https://twitter.com/2HB2QedJXb7055" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/notslicedd" target="_blank" rel="noopener noreferrer">
             <img src={twitter} className='link1' alt="Twitter" />
           </a>
-          <a href="https://github.com/movemented" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/wicked1234567" target="_blank" rel="noopener noreferrer">
             <img src={git} className='link2' alt="GitHub" />
           </a>
-          <a href="https://www.instagram.com/movemented/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/lixrqa?igsh=MWQwbHJ6OHBvdHd1eA==" target="_blank" rel="noopener noreferrer">
             <img src={insta} className='link3' alt="Instagram" />
           </a>
-          <a href="https://www.youtube.com/channel/UCbrSndkaflZIa6HaCBHLRvA" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/@ritualblox" target="_blank" rel="noopener noreferrer">
             <img src={yt} className='link4' alt="YouTube" />
           </a>
-          <a href="https://discord.com/users/1079862959360184390" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.com/users/1251399089162162227" target="_blank" rel="noopener noreferrer">
             <img src={discord} className='link5' alt="Discord" />
           </a>
         </div>
@@ -197,17 +197,17 @@ function App() {
         <div className='div2'></div>
         <button
           className='button2'
-          onClick={() => handleCopyAddress1('ltc1qwu5kth29x3ev63fuex4ln873kdwdxdnvw0fvdq', 'LTC Address')}
+          onClick={() => handleCopyAddress1('https://discord.gg/7apV9Tpkw3', 'discord invite')}
           data-label={cssLabel1}
         >
-          LTC
+          
         </button>
         <button
           className='button1'
-          onClick={() => handleCopyAddress('bc1qmdde26zln58kprcz2fxf7980ad9jfnpxa7ev4p', 'BTC Address')}
+          onClick={() => handleCopyAddress('1251399089162162227', 'discord owners id')}
           data-label={cssLabel}
         >
-          BTC
+          
         </button>
       </div>
     </div>
